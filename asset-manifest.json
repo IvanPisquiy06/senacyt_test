@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/senacyt_test/static/css/main.46e3825c.css",
+    "main.js": "/senacyt_test/static/js/main.fe4d8be6.js",
+    "static/js/787.c498b651.chunk.js": "/senacyt_test/static/js/787.c498b651.chunk.js",
+    "index.html": "/senacyt_test/index.html",
+    "static/media/circles.svg": "/senacyt_test/static/media/circles.5b05cdfb657444dff4ea.svg",
+    "main.46e3825c.css.map": "/senacyt_test/static/css/main.46e3825c.css.map",
+    "main.fe4d8be6.js.map": "/senacyt_test/static/js/main.fe4d8be6.js.map",
+    "787.c498b651.chunk.js.map": "/senacyt_test/static/js/787.c498b651.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46e3825c.css",
+    "static/js/main.fe4d8be6.js"
+  ]
+}
