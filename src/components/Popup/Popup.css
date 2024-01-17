@@ -1,0 +1,41 @@
+.popUp{
+    position: fixed;
+    top: calc(35%);
+    left: calc(50% - 10rev);
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popUpTitle{
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.btn{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: 0.6s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.confirm{
+    background-color: green;
+}
+
+.close{
+    background-color: red;
+}

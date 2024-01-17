@@ -1,0 +1,55 @@
+.opciones{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opciones p {
+    color: white;
+}
+
+.userTitle{
+    color: white;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.idOption{
+    display: flex;
+    flex-direction: column;
+}
+
+.idOption p{
+    color: white;
+    margin: 10px 0;
+}
+
+#userId{
+    margin-bottom: 20px;
+}
+
+.userBtn{
+    background-color: #A6A023;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 480px){
+    .opciones{
+        flex-direction: column;
+    }
+
+    .userBtn:first-child{
+        margin: 20px 0;
+    }
+
+    .idOption{
+        margin: 20px 0;
+    }
+}

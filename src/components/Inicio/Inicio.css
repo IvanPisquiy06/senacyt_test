@@ -1,0 +1,27 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.infoText h2{
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+@media screen and (max-width:480px){
+    .main{
+        flex-direction: column;
+        margin: 30px 0;
+        padding: 20px;
+    }
+
+    .infoText{
+        order: 2;
+    }
+
+    .usersImg{
+        width: 10rem;
+    }
+}
