@@ -1,11 +1,13 @@
 import './Usuario.css';
 import { useState } from 'react';
 import Tabla from '../Tabla/Tabla';
+import Message from '../Message/Message';
 
 export default function Usuario(){
 
     const [showTable, setShowTable] = useState(false);
     const [jsonData, setJsonData] = useState(null);
+    const [showMessage, setShowMessage] = useState(false);
 
     async function getData(){
         try{
@@ -40,8 +42,13 @@ export default function Usuario(){
             setJsonData(dataArray);
             setShowTable(true);
         } catch(error){
+            setShowMessage(true);
             console.log(error)
         }
+    }
+
+    const messagePopUp = (show) => {
+        setShowMessage(show)
     }
 
     return <>
@@ -51,9 +58,10 @@ export default function Usuario(){
             <p> o </p>
             <div className='idOption'>
                 <p>Busca un usuario por su ID:</p>
-                <input type='text' id='userId'></input>
+                <input type='text' placeholder='Ex: 12355608P' maxLength='9' id='userId'></input>
                 <button onClick={getDataById} className='userBtn'>Obtener usuario</button>
             </div>
+            { showMessage && <Message view={messagePopUp} message='Usuario no encontrado' />}
         </div>
         { showTable && <Tabla data={jsonData} /> }
     </>

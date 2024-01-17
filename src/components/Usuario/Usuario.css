@@ -27,6 +27,9 @@
 
 #userId{
     margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .userBtn{
